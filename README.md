@@ -1,5 +1,5 @@
 # Arya Wira Pratama 👋
-![Profile.jpg]
+![Profile.jpg](Profile.jpg)
 
 > *"Wih, kepo ya? Yaudah, sekalian kenalan aja."* 🌾
 
