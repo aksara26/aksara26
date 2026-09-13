@@ -1,5 +1,7 @@
 # Arya Wira Pratama 👋
-![Profile.jpg](Profile.jpg)
+<p align="center">
+  <img src="Profile.jpg" alt="Profile" width="250"/>
+</p>
 
 > *"Wih, kepo ya? Yaudah, sekalian kenalan aja."* 🌾
 
