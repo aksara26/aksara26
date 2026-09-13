@@ -1,5 +1,6 @@
 # Arya Wira Pratama 👋
 
+![https://www.instagram.com/p/DclSENblFHA/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==]
 > *"Wih, kepo ya? Yaudah, sekalian kenalan aja."* 🌾
 
 > *"Alon-alon asal konsisten, ngoding pelan sing penting `no error`."* 🌾
