@@ -1,0 +1,107 @@
+name: Mario Contribution
+
+on:
+  workflow_dispatch:
+
+jobs:
+  mario:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create Mario World
+        run: |
+          mkdir -p dist
+
+          cat > dist/mario.svg <<'EOF'
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="1200"
+               height="350"
+               viewBox="0 0 1200 350">
+
+            <!-- Background -->
+            <rect width="1200" height="350" fill="#5c94fc"/>
+
+            <!-- Clouds -->
+            <g fill="#ffffff">
+              <rect x="100" y="55" width="90" height="35" rx="15"/>
+              <rect x="130" y="35" width="45" height="35" rx="20"/>
+
+              <rect x="850" y="75" width="100" height="35" rx="15"/>
+              <rect x="885" y="50" width="50" height="40" rx="20"/>
+            </g>
+
+            <!-- Coins -->
+            <g fill="#ffd700" stroke="#b8860b" stroke-width="5">
+              <circle cx="300" cy="100" r="22"/>
+              <circle cx="600" cy="80" r="22"/>
+              <circle cx="900" cy="110" r="22"/>
+            </g>
+
+            <!-- Question blocks -->
+            <g fill="#f5a623" stroke="#8b4513" stroke-width="6">
+              <rect x="240" y="150" width="55" height="55"/>
+              <rect x="540" y="130" width="55" height="55"/>
+              <rect x="840" y="160" width="55" height="55"/>
+            </g>
+
+            <!-- Ground -->
+            <g fill="#8b4513" stroke="#5c3317" stroke-width="4">
+              <rect x="0" y="270" width="1200" height="80"/>
+            </g>
+
+            <!-- Grass -->
+            <rect x="0" y="255" width="1200" height="20" fill="#228b22"/>
+
+            <!-- Mario -->
+            <g>
+              <!-- Hat -->
+              <rect x="510" y="185" width="65" height="18" fill="#e52521"/>
+              <rect x="525" y="170" width="45" height="20" fill="#e52521"/>
+
+              <!-- Face -->
+              <rect x="525" y="190" width="45" height="40" fill="#ffcc99"/>
+
+              <!-- Shirt -->
+              <rect x="515" y="225" width="65" height="35" fill="#e52521"/>
+
+              <!-- Overalls -->
+              <rect x="530" y="220" width="35" height="40" fill="#2455c3"/>
+
+              <!-- Legs -->
+              <rect x="515" y="255" width="25" height="25" fill="#5b351b"/>
+              <rect x="555" y="255" width="25" height="25" fill="#5b351b"/>
+            </g>
+
+            <!-- Castle -->
+            <g fill="#d9d9d9" stroke="#555" stroke-width="5">
+              <rect x="1040" y="185" width="100" height="70"/>
+              <rect x="1060" y="145" width="25" height="45"/>
+              <rect x="1095" y="145" width="25" height="45"/>
+            </g>
+
+            <!-- Title -->
+            <text x="600" y="325"
+                  text-anchor="middle"
+                  font-family="monospace"
+                  font-size="24"
+                  font-weight="bold"
+                  fill="white">
+              MARIO CONTRIBUTION WORLD
+            </text>
+
+          </svg>
+          EOF
+
+      - name: Publish Mario
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          build_dir: dist
+          target_branch: mario-output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
