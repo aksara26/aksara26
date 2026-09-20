@@ -113,10 +113,8 @@ public:
 <p align="center">
   <sub>From Ponorogo, documenting one commit at a time. 🌾</sub>
 </p>
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/aksara26/aksara26/mario-output/mario.svg"
-    alt="Mario Contribution World"
-    width="100%"
-  >
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aksara26/aksara26/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aksara26/aksara26/output/github-snake.svg">
+  <img alt="GitHub Snake" src="https://raw.githubusercontent.com/aksara26/aksara26/output/github-snake.svg">
+</picture>
