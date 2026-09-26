@@ -49,9 +49,7 @@ Saat ini aku masih menjelajahi dunia komputer dan belum mengunci diri pada satu 
 
 ## 📊 GitHub Analytics
 
-[![Arya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=aksara26&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400)](https://github.com/aksara26)
 
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aksara26&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400)](https://github.com/aksara26)
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=aksara26&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 
